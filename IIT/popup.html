@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DMI SPARKLES</title>
+    <link rel="stylesheet" href="styles.css">
+  <script src="popup.js"></script>
+</head>
+
+<body>
+    <div class="header">
+        <img src="icon.png" id="logo" alt="DMI Sparkles Logo">
+        <span id="extension_name">DMI SPARKLES</span>
+    </div>
+    <div class="button-container">
+        <button id="b1">
+            <img src="button_off.svg" id="b_image">
+        </button>
+    </div>
+    <div class="counter-container">
+        Unpacking Dark Patterns :
+        <span id="count">0</span>
+    </div>
+
+    <div id="output">
+        LET'S HUNT IT...
+    </div>
+
+    <button id="reportButton">Report Dark Pattern</button>
+    <div id="reportForm" style="display: none;">
+        <h2>Report Dark Pattern</h2>
+        <form id="darkPatternForm">
+            <label for="patternDescription">Description:</label><br>
+            <textarea id="patternDescription" name="patternDescription" rows="4" cols="50"></textarea><br>
+            <label for="patternUrl">URL:</label><br>
+            <input type="text" id="patternUrl" name="patternUrl"><br>
+            <label for="patternCategory">Category:</label><br>
+            <select id="patternCategory" name="patternCategory">
+                <option value="misleading_urgency">Misleading Urgency</option>
+                <option value="hidden_costs">Hidden Costs</option>
+                <option value="scarcity">Scarcity</option>
+                <option value="social_proof">Social Proof</option>
+                <option value="misdirection">Misdirection</option>
+                <option value="sneaking">Sneaking</option>
+                <option value="bait_and_switch">Bait-and-Switch</option>
+                <option value="confirmshaming">Confirmshaming</option>
+                <option value="roach_motel">Roach Motel</option>
+                <option value="forced_continuity">Forced Continuity</option>
+                <option value="limited_time_only">Limited Time Only</option>
+                <option value="trick_questions">Trick Questions</option>
+                <option value="privacy_zuckering">Privacy Zuckering</option>
+                <option value="friend_spam">Friend Spam</option>
+                <option value="hidden_subscription">Hidden Subscription</option>
+                <option value="disguised_ads_as_content">Disguised Ads as Content</option>
+                <option value="trickledown">Trickledown</option>
+                <option value="fake_reviews">Fake Reviews</option>
+                <option value="misleading_icons">Misleading Icons</option>
+                <option value="hijacked_scrolling">Hijacked Scrolling</option>
+                <option value="confirm_opt_in">Confirm-Opt-In</option>
+                <option value="price_comparison_prevention">Price Comparison Prevention</option>
+                <option value="hidden_unsubscribe">Hidden Unsubscribe</option>
+            </select><br>
+            <label for="patternSeverity">Severity:</label><br>
+            <select id="patternSeverity" name="patternSeverity">
+                <option value="low">Low</option>
+                <option value="medium">Medium</option>
+                <option value="high">High</option>
+            </select><br><br>
+            <input type="submit" value="Submit">
+        </form>
+    </div>
+
+    <a href="popup2.html">
+        <button id="blacklistButton">Blacklist</button>
+    </a>
+
+    <a href="https://www.codilar.com/dark-pattern-and-its-impact-on-ecommerce/" target="_blank"> WHAT ARE DECEITFUL DESIGN?</a>
+
+</body>
+
+</html>
